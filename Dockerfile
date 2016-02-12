@@ -2,6 +2,7 @@ FROM alpine:3.1
 
 # Add Testing Repo for Alpine
 RUN echo "@testing http://dl-4.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
+RUN apk upgrade --update
 
 # Install app dependencies
 RUN apk add --update mongodb@testing libssl1.0 git curl apk-tools python wget g++ make
