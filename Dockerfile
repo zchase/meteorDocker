@@ -1,2 +1,2 @@
 FROM meteorhacks/meteord:onbuild
-EXPOSE 8000
+EXPOSE 3000
