@@ -14,7 +14,8 @@ COPY build/bundle/programs/server/package.json /src/package.json
 RUN cd /src; npm install
 
 # Bundle app source
+RUN ls
 COPY . /src
 
 EXPOSE  3000
-CMD ["usr/bin/node", "build/bundle/main.js"]
+CMD ["usr/bin/node", "src/build/bundle/main.js"]
