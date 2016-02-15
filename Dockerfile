@@ -1,4 +1,5 @@
 FROM ubuntu:14.04
+ENV     MONGO_URL="mongodb://localhost:27017/todos" ROOT_URL="http://162.243.233.228"
 
 # Update
 RUN sudo apt-get update
