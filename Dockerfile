@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 
 # Update
 RUN sudo apt-get update
-RUN sudo apt-get install -y mongodb-server build-essential libssl-dev git curl
+RUN sudo apt-get install -y mongodb-server build-essential libssl-dev git curl wget
 RUN cd /tmp
 RUN wget http://nodejs.org/dist/v0.10.40/node-v0.10.40-linux-x64.tar.gz
 RUN tar xvzf node-v0.10.40-linux-x64.tar.gz
